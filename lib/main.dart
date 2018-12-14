@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
       title: 'Startup Name Generator',
       home: RandomWords(),
       theme: new ThemeData(          // Add the 3 lines from here... 
-        primaryColor: Colors.redAccent,
+        primaryColor: Colors.blueGrey[900],
       ),                             // ... to here.
     );
   }
@@ -86,7 +86,7 @@ class RandomWordsState extends State<RandomWords> {
     ),
     trailing: new Icon(   // Add the lines from here... 
       alreadySaved ? Icons.favorite : Icons.favorite_border,
-      color: alreadySaved ? Colors.red : null,
+      color: alreadySaved ? Colors.blue : null,
     ),                    // ... to here.
     onTap: () {      // Add 9 lines from here...
       setState(() {
